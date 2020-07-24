@@ -3,6 +3,7 @@ import os
 import csv
 from matplotlib import pyplot as plt
 
+
 class salario():
     def __init__(self):
         self.salario = 0
@@ -58,10 +59,19 @@ class salario():
         else:
             print(self.total)
 
-
     def gera_grafico(self):
+        plt.style.use("fivethirtyeight")
+        plt.title("Suas financas em um Grafico")
+        percentInvest = (self.quantinvest/self.salario)*100
+        percentContas = (self.contas1/self.salario)*100
+        percentSaldo = (self.total/self.salario)*100
+        labels= 'Saldo Total {}%'.format(round(percentSaldo, 2)), 'Investimento {}%'.format(round(percentInvest, 2)), 'Contas {}%'.format(round(percentContas, 2))
+        financas = [self.total, self.quantinvest, self.contas1]
+        plt.pie(financas, labels=labels)
+        plt.show()
 
 
 a = salario()
 a.contas()
 a.gera_rel()
+a.gera_grafico()
