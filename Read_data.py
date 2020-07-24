@@ -1,7 +1,7 @@
 import datetime
 import os
 import csv
-
+from matplotlib import pyplot as plt
 
 class salario():
     def __init__(self):
@@ -57,6 +57,9 @@ class salario():
             print("Voce esta em debito de "+ str(self.total))
         else:
             print(self.total)
+
+
+    def gera_grafico(self):
 
 
 a = salario()
