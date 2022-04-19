@@ -9,7 +9,15 @@ PRONTO
 
 INPUT DO SISTEMA
 SALARIO, CONTAS E INVESTIMENTOS
+![alt text](https://github.com/lucasfersilva/finance_control/blob/643567bca0261be414a4380a736773c5b8cd3bb8/sistema_finan%C3%A7as.png?raw=true)
 
+Depois do input ele gera um gráfico do tipo pie mostrando a porcentagem que vai para cada gasto do seu sálario 
+
+![alt_text](https://github.com/lucasfersilva/finance_control/blob/643567bca0261be414a4380a736773c5b8cd3bb8/Grafico_pizza.png)
+
+E gera um CSV que você pode usar para controlar durante os meses ou cada ganho e gasto que você teve durante o seu mês
+
+![alt_text](https://github.com/lucasfersilva/finance_control/blob/643567bca0261be414a4380a736773c5b8cd3bb8/excel.png)
 
 
 
